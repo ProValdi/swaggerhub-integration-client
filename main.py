@@ -1,16 +1,20 @@
-# This is a sample Python script.
+from __future__ import print_function
+import time
+import client.swagger_client as cli
+from client.swagger_client.rest import ApiException
+from pprint import pprint
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Configure OAuth2 access token for authorization: petstore_auth
+configuration = cli.Configuration()
+configuration.access_token = 'YOUR_ACCESS_TOKEN'
 
+# create an instance of the API class
+api_instance = cli.SummApi(cli.ApiClient(configuration))
+body = cli.Nums()  # Nums | 2 numbers to operate with
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+try:
+    # operate 2 numbers
+    api_instance.do_action(body)
+except ApiException as e:
+    print("Exception when calling SummApi->do_action: %s\n" % e)
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
