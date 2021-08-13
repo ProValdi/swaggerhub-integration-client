@@ -28,8 +28,6 @@ REQUIRES = [
     "six>=1.10",
     "urllib3>=1.23"
 ]
-
-#HelloWorld!
     
 
 setup(
