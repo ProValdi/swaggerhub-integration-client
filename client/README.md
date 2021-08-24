@@ -74,7 +74,7 @@ except ApiException as e:
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://virtserver.swaggerhub.com/ProValdi/server/0.1.0-oas3*
+All URIs are relative to *https://localhost:8080/server/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
