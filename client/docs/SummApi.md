@@ -1,19 +1,16 @@
 # swagger_client.SummApi
 
-All URIs are relative to *https://virtserver.swaggerhub.com/ProValdi/test-integrations/1.0.0*
+All URIs are relative to *https://virtserver.swaggerhub.com/ProValdi/server/0.1.0-oas3*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**do_action**](SummApi.md#do_action) | **POST** /operate | operate 2 numbers
 [**get_results**](SummApi.md#get_results) | **GET** /results | Get previous results
 
-
 # **do_action**
 > do_action(body)
 
 operate 2 numbers
-
-
 
 ### Example
 ```python
@@ -23,12 +20,8 @@ import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
 
-# Configure OAuth2 access token for authorization: petstore_auth
-configuration = swagger_client.Configuration()
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
 # create an instance of the API class
-api_instance = swagger_client.SummApi(swagger_client.ApiClient(configuration))
+api_instance = swagger_client.SummApi()
 body = swagger_client.Nums() # Nums | 2 numbers to operate with
 
 try:
@@ -50,12 +43,12 @@ void (empty response body)
 
 ### Authorization
 
-[petstore_auth](../README.md#petstore_auth)
+No authorization required
 
 ### HTTP request headers
 
  - **Content-Type**: application/json
- - **Accept**: application/json
+ - **Accept**: Not defined
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
@@ -74,12 +67,8 @@ import swagger_client
 from swagger_client.rest import ApiException
 from pprint import pprint
 
-# Configure OAuth2 access token for authorization: petstore_auth
-configuration = swagger_client.Configuration()
-configuration.access_token = 'YOUR_ACCESS_TOKEN'
-
 # create an instance of the API class
-api_instance = swagger_client.SummApi(swagger_client.ApiClient(configuration))
+api_instance = swagger_client.SummApi()
 
 try:
     # Get previous results
@@ -98,7 +87,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[petstore_auth](../README.md#petstore_auth)
+No authorization required
 
 ### HTTP request headers
 
