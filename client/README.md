@@ -52,24 +52,14 @@ from swagger_client.rest import ApiException
 from pprint import pprint
 
 # create an instance of the API class
-api_instance = swagger_client.SummApi(swagger_client.ApiClient(configuration))
-body = swagger_client.Nums() # Nums | 2 numbers to operate with
+api_instance = swagger_client.ClearApi(swagger_client.ApiClient(configuration))
 
 try:
-    # operate 2 numbers
-    api_instance.do_action(body)
-except ApiException as e:
-    print("Exception when calling SummApi->do_action: %s\n" % e)
-
-# create an instance of the API class
-api_instance = swagger_client.SummApi(swagger_client.ApiClient(configuration))
-
-try:
-    # Get previous results
-    api_response = api_instance.get_results()
+    # clear list of requests
+    api_response = api_instance.delete_results()
     pprint(api_response)
 except ApiException as e:
-    print("Exception when calling SummApi->get_results: %s\n" % e)
+    print("Exception when calling ClearApi->delete_results: %s\n" % e)
 ```
 
 ## Documentation for API Endpoints
@@ -78,6 +68,7 @@ All URIs are relative to *http://localhost:8080/server/*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
+*ClearApi* | [**delete_results**](docs/ClearApi.md#delete_results) | **GET** /clear | clear list of requests
 *SummApi* | [**do_action**](docs/SummApi.md#do_action) | **POST** /operate | operate 2 numbers
 *SummApi* | [**get_results**](docs/SummApi.md#get_results) | **GET** /results | Get previous results
 

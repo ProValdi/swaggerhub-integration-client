@@ -15,6 +15,7 @@
 from __future__ import absolute_import
 
 # import apis into sdk package
+from swagger_client.api.clear_api import ClearApi
 from swagger_client.api.summ_api import SummApi
 # import ApiClient
 from swagger_client.api_client import ApiClient
