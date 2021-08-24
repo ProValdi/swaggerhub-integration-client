@@ -1,6 +1,6 @@
 # swagger_client.SummApi
 
-All URIs are relative to *https://localhost:8080/server/*
+All URIs are relative to *http://localhost:8080/server/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
